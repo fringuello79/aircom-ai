@@ -1,0 +1,92 @@
+{
+  "scenario_id": "liah-overflight-01",
+  "version": "0.1.0",
+  "status": "DRAFT",
+  "club_id": "aeroclub-dei-marsi",
+  "name": {
+    "it": "Chiamate all'aria — sorvolo area Marsica",
+    "en": "Blind position calls — Marsica area overflight"
+  },
+  "description": {
+    "it": "Navigazione nell'area con chiamate all'aria di posizione. Nessun ente che risponde: si allena la disciplina del riporto e la chiarezza.",
+    "en": "Area navigation with blind position calls."
+  },
+  "difficulty": [
+    "BEGINNER",
+    "NORMAL",
+    "ADVANCED"
+  ],
+  "pilot_type": [
+    "VDS",
+    "VDS_AVANZATO"
+  ],
+  "language": [
+    "it"
+  ],
+  "modes": [
+    "ASSISTED",
+    "REALISTIC",
+    "EXAM"
+  ],
+  "departure": "liah",
+  "destination": "liah",
+  "aircraft_allowed": [
+    "i-6195",
+    "i-8297"
+  ],
+  "station": "liah-radio",
+  "call_structure": {
+    "elements": [
+      "callsign",
+      "position",
+      "altitude",
+      "heading"
+    ],
+    "example_provided_by_club": "India sei uno nove cinque, sulla verticale di Celano, quota 4500 piedi, prua 310",
+    "_note": "Struttura ricavata dall'esempio fornito dal club. Da confermare se l'ordine degli elementi è vincolante e se le intenzioni vanno aggiunte."
+  },
+  "randomize": {
+    "position": [
+      "sulla verticale di Celano",
+      "sulla verticale di Avezzano",
+      "sulla verticale di Paterno",
+      "sulla verticale di San Pelino",
+      "2 km a est di Avezzano"
+    ],
+    "altitude_ft_amsl_range": [
+      3500,
+      5500
+    ],
+    "heading_deg_range": [
+      0,
+      359
+    ],
+    "other_traffic_present": [
+      true,
+      false
+    ]
+  },
+  "expected_calls": [],
+  "_todo_expected_calls": "Servono altri esempi reali di chiamate all'aria come le insegnate voi.",
+  "grading_rules": {
+    "weights": {
+      "callsign_usage": 20,
+      "position_clarity": 25,
+      "altitude_reported": 20,
+      "heading_reported": 15,
+      "radio_discipline": 20
+    },
+    "deterministic_penalties": [
+      {
+        "error": "CALLSIGN_ERROR",
+        "when": "il pilota abbrevia il proprio nominativo",
+        "severity": "MEDIUM"
+      }
+    ]
+  },
+  "_meta": {
+    "uses_real_data": false,
+    "created_at": "2026-08-10",
+    "reviewed_by_instructor": false
+  }
+}

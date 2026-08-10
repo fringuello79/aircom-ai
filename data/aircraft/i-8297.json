@@ -1,0 +1,26 @@
+{
+  "id": "i-8297",
+  "club_id": "aeroclub-dei-marsi",
+  "registration": "I-8297",
+  "type": "Tecnam P2002 Sierra",
+  "category": "VDS",
+  "callsign_spoken": {
+    "it": "India otto due nove sette",
+    "en": null,
+    "digit_grouping": "SINGLE_DIGITS",
+    "pilot_may_abbreviate": false,
+    "_note": "Cifre scandite una a una. Il pilota usa SEMPRE il nominativo completo, in ogni trasmissione.",
+    "_todo_en": "Forma inglese del nominativo"
+  },
+  "performance_hint": {
+    "circuit_speed_kt": null,
+    "cruise_speed_kt": null,
+    "_note": "Solo indicativi per il realismo della simulazione, mai per uso operativo."
+  },
+  "_meta": {
+    "status": "PENDING_VERIFICATION",
+    "data_type": "REAL_UNVERIFIED",
+    "verified_by": null,
+    "verified_at": null
+  }
+}

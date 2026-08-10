@@ -1,0 +1,107 @@
+{
+  "id": "liah",
+  "club_id": "aeroclub-dei-marsi",
+  "name": "Aviosuperficie LIAH — Celano",
+  "code": "LIAH",
+  "country": "IT",
+  "type": "AVIOSUPERFICIE",
+  "position": {
+    "lat": null,
+    "lon": null,
+    "_todo": "Coordinate del campo"
+  },
+  "elevation_ft_amsl": 2200,
+  "runway_strip": {
+    "length_m": 800,
+    "width_m": 30,
+    "surface": "ASPHALT",
+    "ends": [
+      {
+        "designator": "08",
+        "circuit_direction": "RIGHT",
+        "downwind_call": "sottovento destro zero otto"
+      },
+      {
+        "designator": "26",
+        "circuit_direction": "LEFT",
+        "downwind_call": "sottovento sinistro due sei"
+      }
+    ]
+  },
+  "circuit": {
+    "altitude_ft_amsl": 2900,
+    "altitude_ft_agl_derived": 700,
+    "applies_to": [
+      "08",
+      "26"
+    ],
+    "_note": "2900 ft AMSL confermati (700 ft sul campo), validi per entrambe le piste."
+  },
+  "circuit_calls": [
+    {
+      "id": "downwind",
+      "label": "sottovento",
+      "runway_dependent": true,
+      "spoken": {
+        "08": "sottovento destro zero otto",
+        "26": "sottovento sinistro due sei"
+      }
+    },
+    {
+      "id": "base",
+      "label": "base",
+      "runway_dependent": false
+    },
+    {
+      "id": "long_final",
+      "label": "lungo finale",
+      "runway_dependent": false
+    },
+    {
+      "id": "short_final",
+      "label": "corto finale",
+      "runway_dependent": false
+    }
+  ],
+  "area_reference_points": [
+    {
+      "id": "celano",
+      "label": "Celano",
+      "type": "LOCALITY"
+    },
+    {
+      "id": "avezzano",
+      "label": "Avezzano",
+      "type": "LOCALITY"
+    },
+    {
+      "id": "paterno",
+      "label": "Paterno",
+      "type": "LOCALITY"
+    },
+    {
+      "id": "san-pelino",
+      "label": "San Pelino",
+      "type": "LOCALITY"
+    }
+  ],
+  "_note_area_points": "Riferimenti geografici usati nelle chiamate all'aria di sorvolo, non punti di riporto formali. Ammesse anche posizioni relative ('2 km a est di Avezzano').",
+  "radio_stations": [
+    "liah-radio"
+  ],
+  "operating_hours": null,
+  "limitations": [],
+  "_meta": {
+    "status": "PENDING_VERIFICATION",
+    "data_type": "REAL_UNVERIFIED",
+    "source": "Alessandro Felli, Vicepresidente Aeroclub dei Marsi",
+    "source_reference": null,
+    "source_date": "2026-08-10",
+    "verified_by": null,
+    "verified_at": null,
+    "valid_from": null,
+    "valid_to": null,
+    "notes": "Quota circuito, senso circuiti e sequenza riporti confermati dal Vicepresidente. Restano da compilare: coordinate, orari. Diventa VERIFIED quando verified_by e' firmato."
+  },
+  "_note_circuit_calls": "Sequenza confermata: sottovento -> base -> lungo finale -> corto finale. Il 'land' NON si trasmette via radio: e' una chiamata interna di cabina. L'AI non deve mai attenderlo ne' sollecitarlo."
+}

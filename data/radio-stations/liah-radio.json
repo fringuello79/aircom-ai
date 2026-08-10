@@ -1,0 +1,51 @@
+{
+  "id": "liah-radio",
+  "airfield_id": "liah",
+  "club_id": "aeroclub-dei-marsi",
+  "service_type": "AVIOSUPERFICIE_RADIO",
+  "_note_service_type": "Stazione radio di aviosuperficie: fornisce INFORMAZIONI, non esercita controllo del traffico.",
+  "callsign_spoken": {
+    "it": "Celano Radio",
+    "en": null,
+    "_todo_en": "Nominativo usato quando si opera in inglese: resta 'Celano Radio' o cambia?"
+  },
+  "frequency_mhz": "130.000",
+  "_note_frequency": "Confermata più volte. ATTENZIONE: 123.500 è un errore storico, mai usarlo.",
+  "hours": null,
+  "language": [
+    "it",
+    "en"
+  ],
+  "may_issue": [
+    "pista in uso (come informazione)",
+    "vento",
+    "traffico noto",
+    "QNH",
+    "informazioni sul campo"
+  ],
+  "must_never_issue": [
+    "autorizzazioni al decollo",
+    "autorizzazioni all'atterraggio",
+    "autorizzazioni al rullaggio",
+    "istruzioni di separazione dal traffico",
+    "clearance di qualsiasi tipo"
+  ],
+  "_note_never": "⚠️ REGOLA DIDATTICA CRITICA: una radio di aviosuperficie non autorizza. L'AI non deve mai dire 'autorizzato al decollo' o simili. Il motore blocca queste formule prima che vengano pronunciate.",
+  "_todo_may_issue": "Confermare l'elenco: è esattamente ciò che Celano Radio comunica nella pratica?",
+  "_meta": {
+    "status": "PENDING_VERIFICATION",
+    "data_type": "REAL_UNVERIFIED",
+    "source": "Alessandro Felli, Vicepresidente Aeroclub dei Marsi",
+    "source_date": "2026-08-10",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": null
+  },
+  "callsign_rules": {
+    "station_may_abbreviate_aircraft_callsign": true,
+    "pilot_must_always_use_full_callsign": true,
+    "abbreviated_form": null,
+    "_todo_abbreviated_form": "Come abbrevia Celano Radio il nominativo? (es. 'India 95'? 'novantacinque'?)",
+    "_note": "ASIMMETRIA VOLUTA: la stazione puo' abbreviare, l'aeromobile no. Se il pilota abbrevia -> errore CALLSIGN_ERROR."
+  }
+}

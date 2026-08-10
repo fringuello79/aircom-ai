@@ -1,0 +1,62 @@
+{
+  "id": "liah-it",
+  "airfield_id": "liah",
+  "station_id": "liah-radio",
+  "language": "it",
+  "version": "0.1.0",
+
+  "conventions": {
+    "greeting_used": true,
+    "_note_greeting": "Il saluto ('buongiorno') fa parte della prassi locale nel primo contatto.",
+    "pilot_self_reference": "TERZA_PERSONA",
+    "_note_self_reference": "Il pilota parla di sé in terza persona: 'I6195 chiede autorizzazione', non 'chiedo'.",
+    "station_addresses_pilot": "SECONDA_PLURALE",
+    "_note_station": "La stazione dà del voi: 'riportate punto attesa'.",
+    "pilot_callsign": "SEMPRE_COMPLETO",
+    "station_may_abbreviate_aircraft_callsign": true,
+    "pilot_states_intentions": true,
+    "_note_intentions": "Il pilota anticipa cosa farà: 'riporteremo punto attesa pista 08'."
+  },
+
+  "exchanges": [
+    {
+      "phase": "INITIAL_CALL",
+      "pilot": "Celano Radio, I6195, buongiorno",
+      "station": "I6195 buongiorno, avanti",
+      "elements": ["stazione", "nominativo", "saluto"],
+      "note": "Chiamata di apertura. La stazione invita a proseguire con 'avanti'."
+    },
+    {
+      "phase": "TAXI_REQUEST",
+      "pilot": "Celano Radio, I6195, al parcheggio 6, pronto a rullare, riporteremo punto attesa pista 08",
+      "station": "I6195, la pista 08 è occupata, riportate punto attesa",
+      "elements": ["stazione", "nominativo", "posizione", "intenzione", "riporto annunciato"],
+      "note": "La stazione fornisce l'informazione sullo stato della pista, non un'istruzione di separazione."
+    },
+    {
+      "phase": "HOLDING_POINT",
+      "pilot": "Celano Radio, I6195, al punto attesa 08, velivolo in decollo in vista, chiede autorizzazione al backtrack per allineamento e decollo pista 08",
+      "station": "I6195, autorizzato al backtrack per allineamento e decollo pista 08",
+      "elements": ["stazione", "nominativo", "posizione", "traffico in vista", "richiesta"],
+      "note": "Il pilota dichiara di avere il traffico in vista: l'onere della separazione a vista resta suo."
+    },
+
+    { "phase": "AFTER_TAKEOFF",  "pilot": null, "station": null, "_todo": "Chiamata dopo il decollo" },
+    { "phase": "DOWNWIND",       "pilot": null, "station": null, "_todo": "Riporto sottovento" },
+    { "phase": "BASE",           "pilot": null, "station": null, "_todo": "Riporto base" },
+    { "phase": "LONG_FINAL",     "pilot": null, "station": null, "_todo": "Riporto lungo finale" },
+    { "phase": "SHORT_FINAL",    "pilot": null, "station": null, "_todo": "Riporto corto finale" },
+    { "phase": "AFTER_LANDING",  "pilot": null, "station": null, "_todo": "Riporto dopo l'atterraggio, se previsto" },
+    { "phase": "REJOIN",         "pilot": null, "station": null, "_todo": "Rientro da fuori campo e inserimento in circuito" }
+  ],
+
+  "_meta": {
+    "status": "PENDING_VERIFICATION",
+    "data_type": "REAL_UNVERIFIED",
+    "source": "Prassi didattica dell'Aeroclub dei Marsi — esempi forniti da Alessandro Felli",
+    "source_date": "2026-08-10",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": "Questi scambi sono il riferimento per la voce dell'AI e per la valutazione. Non integrarli con fraseologia presa da altre fonti senza approvazione del club."
+  }
+}

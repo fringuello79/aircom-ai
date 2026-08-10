@@ -17,21 +17,20 @@
     "en"
   ],
   "may_issue": [
-    "pista in uso (come informazione)",
+    "pista in uso e stato della pista (es. pista occupata)",
     "vento",
     "traffico noto",
     "QNH",
-    "informazioni sul campo"
+    "informazioni sul campo",
+    "autorizzazione all'uso della superficie: backtrack, allineamento, decollo, atterraggio"
   ],
   "must_never_issue": [
-    "autorizzazioni al decollo",
-    "autorizzazioni all'atterraggio",
-    "autorizzazioni al rullaggio",
     "istruzioni di separazione dal traffico",
-    "clearance di qualsiasi tipo"
+    "clearance di attraversamento o ingresso in spazio aereo controllato",
+    "istruzioni di controllo del traffico aereo (vettoramenti, livelli, sequenze)",
+    "qualsiasi autorizzazione al di fuori dell'aviosuperficie"
   ],
-  "_note_never": "⚠️ REGOLA DIDATTICA CRITICA: una radio di aviosuperficie non autorizza. L'AI non deve mai dire 'autorizzato al decollo' o simili. Il motore blocca queste formule prima che vengano pronunciate.",
-  "_todo_may_issue": "Confermare l'elenco: è esattamente ciò che Celano Radio comunica nella pratica?",
+  "_note_never": "La separazione resta a carico del pilota, che dichiara il traffico in vista. L'AI non deve mai sostituirsi a un ente ATC.",
   "_meta": {
     "status": "PENDING_VERIFICATION",
     "data_type": "REAL_UNVERIFIED",
@@ -47,5 +46,7 @@
     "abbreviated_form": null,
     "_todo_abbreviated_form": "Come abbrevia Celano Radio il nominativo? (es. 'India 95'? 'novantacinque'?)",
     "_note": "ASIMMETRIA VOLUTA: la stazione puo' abbreviare, l'aeromobile no. Se il pilota abbrevia -> errore CALLSIGN_ERROR."
-  }
+  },
+  "_note_may_issue": "L'aviosuperficie e' area privata: il gestore autorizza l'uso della propria superficie. La prassi locale confermata dal club prevede formule del tipo 'autorizzato al backtrack per allineamento e decollo pista 08'. Questa NON e' una clearance ATC: e' autorizzazione all'uso del campo.",
+  "phraseology_ref": "liah-it"
 }

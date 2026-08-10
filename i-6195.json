@@ -1,0 +1,23 @@
+{
+  "id": "i-6195",
+  "club_id": "aeroclub-dei-marsi",
+  "registration": "I-6195",
+  "type": "Tecnam P96 Golf",
+  "category": "VDS",
+  "callsign_spoken": {
+    "it": null,
+    "en": null,
+    "_todo": "Come viene pronunciato in fonia, in italiano e in inglese"
+  },
+  "performance_hint": {
+    "circuit_speed_kt": null,
+    "cruise_speed_kt": null,
+    "_note": "Solo indicativi per il realismo della simulazione, mai per uso operativo."
+  },
+  "_meta": {
+    "status": "PENDING_VERIFICATION",
+    "data_type": "REAL_UNVERIFIED",
+    "verified_by": null,
+    "verified_at": null
+  }
+}

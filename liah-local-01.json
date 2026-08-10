@@ -1,0 +1,74 @@
+{
+  "scenario_id": "liah-local-01",
+  "version": "0.1.0",
+  "status": "DRAFT",
+  "club_id": "aeroclub-dei-marsi",
+
+  "name": {
+    "it": "Traffico locale LIAH — circuito",
+    "en": "LIAH local traffic — circuit"
+  },
+  "description": {
+    "it": "Accensione, rullaggio, decollo, circuito e atterraggio sull'aviosuperficie di partenza. Un solo ente radio.",
+    "en": "Start-up, taxi, departure, circuit and landing at the home airfield. Single radio station."
+  },
+
+  "difficulty": ["BEGINNER", "NORMAL"],
+  "pilot_type": ["VDS", "VDS_AVANZATO"],
+  "language": ["it", "en"],
+  "modes": ["ASSISTED", "REALISTIC", "EXAM"],
+
+  "departure": "liah",
+  "destination": "liah",
+  "aircraft_allowed": ["i-6195", "i-8297"],
+
+  "initial_state": {
+    "phase": "PARKED",
+    "station": "liah-radio",
+    "altitude_ft": null
+  },
+
+  "flight_phases": [
+    "PARKED", "STARTUP", "TAXI", "HOLDING_POINT", "TAKEOFF",
+    "CIRCUIT", "FINAL", "LANDED"
+  ],
+
+  "randomize": {
+    "runway_in_use": null,
+    "wind": { "direction_deg_range": null, "speed_kt_range": [2, 12] },
+    "traffic_present": [true, false],
+    "events_order": "shuffle",
+    "_todo": "runway_in_use e direzione vento dipendono dai dati LIAH ancora da verificare"
+  },
+
+  "expected_calls": [],
+  "_todo_expected_calls": "SERVONO 5-10 ESEMPI DI CHIAMATE CORRETTE COME LE INSEGNATE VOI. Sono il riferimento sia per l'AI sia per la valutazione: senza, lo scenario non è pubblicabile.",
+
+  "possible_events": [
+    { "id": "traffic_in_circuit", "enabled": true,  "min_difficulty": "NORMAL" },
+    { "id": "position_report_request", "enabled": true, "min_difficulty": "NORMAL" },
+    { "id": "partial_transmission", "enabled": true, "min_difficulty": "ADVANCED" },
+    { "id": "similar_callsign", "enabled": true, "min_difficulty": "ADVANCED" }
+  ],
+
+  "success_conditions": [],
+  "failure_conditions": [],
+
+  "grading_rules": {
+    "weights": {
+      "initial_call": 15,
+      "callsign_usage": 15,
+      "completeness": 15,
+      "readback": 20,
+      "phraseology": 20,
+      "radio_discipline": 15
+    }
+  },
+
+  "_meta": {
+    "uses_real_data": false,
+    "notes": "Finché liah.json e liah-radio.json non sono VERIFIED, lo scenario gira in modalità SIMULATED e la UI deve dichiararlo.",
+    "created_at": "2026-08-10",
+    "reviewed_by_instructor": false
+  }
+}

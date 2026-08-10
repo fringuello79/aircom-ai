@@ -1,0 +1,23 @@
+{
+  "id": "aeroclub-dei-marsi",
+  "name": "Aeroclub dei Marsi",
+  "slug": "marsi",
+  "country": "IT",
+  "region": "Abruzzo",
+  "website": "https://www.aeroclubdeimarsi.it",
+  "home_airfield": "liah",
+  "activity": ["VDS", "VFR"],
+  "branding": {
+    "primary": "#0f172a",
+    "accent": "#c9a960",
+    "logo": "/assets/logo-marsi.svg"
+  },
+  "_meta": {
+    "status": "VERIFIED",
+    "data_type": "REAL_VERIFIED",
+    "source": "Aeroclub dei Marsi",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": "Dati istituzionali del club, non dati operativi di volo."
+  }
+}

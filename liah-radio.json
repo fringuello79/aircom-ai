@@ -1,0 +1,34 @@
+{
+  "id": "liah-radio",
+  "airfield_id": "liah",
+  "club_id": "aeroclub-dei-marsi",
+
+  "service_type": null,
+  "_todo_service_type": "Che servizio è realmente? (radio di aviosuperficie / altro). NON è AFIS se non lo è: l'ente determina cosa può e non può dire.",
+
+  "callsign_spoken": {
+    "it": null,
+    "en": null,
+    "_todo": "Nominativo esatto come viene pronunciato in fonia"
+  },
+
+  "frequency_mhz": "130.000",
+  "_note_frequency": "Valore fornito e ripetutamente confermato. Resta PENDING_VERIFICATION finché non è firmato dal verificatore. ATTENZIONE: 123.500 è un errore storico, mai usarlo.",
+
+  "hours": null,
+  "language": ["it", "en"],
+
+  "may_issue": [],
+  "_todo_may_issue": "Cosa questo ente può realmente comunicare/concedere (informazioni? istruzioni?). Serve al motore per impedire all'AI di concedere autorizzazioni che questo ente non può dare.",
+
+  "_meta": {
+    "status": "PENDING_VERIFICATION",
+    "data_type": "REAL_UNVERIFIED",
+    "source": "Dati forniti dalla Vicepresidenza dell'Aeroclub dei Marsi",
+    "source_reference": null,
+    "source_date": null,
+    "verified_by": null,
+    "verified_at": null,
+    "notes": null
+  }
+}
